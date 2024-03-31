@@ -1,38 +1,382 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body { 
+  background-color: #eaeaea;
+  overflow-y: auto;
+  font-family: "Montserrat", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header { 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 69vw;
+  height: 66px;
+
+  float: none;
+  margin: auto
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.menuButtons { 
+  background-color: #eaeaea;
+  border: 0;
+  height: 33px;
+  width: 33px;
+  margin: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#pathHeader:hover { 
+  fill: #000;
+}
+
+.menuButtonsBlock { 
+  width: 8vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.headphones { 
+  width: 69vw;
+  min-height: 120vh;
+
+  margin: 2vh auto 2vh auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.wheadphones { 
+  width: 69vw;
+  min-height: 67vh;
+
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+
+.card { 
+  display: flex;
+  width: 31%;
+  height: 49vh;
+  flex-wrap: wrap;
+
+
+  margin: 2vh auto auto auto;
+
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+}
+
+.productPic { 
+  width: 62%;
+  height: 53%;
+  max-width: 100%;
+  max-height: 58%;
+  margin: auto;
+}
+
+.productInfo { 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  width: 88%;
+  margin: auto;
+}
+
+
+.incardText { 
+  font-size: 120%;
+  width: 99%;
+  height: 3%;
+  margin: 2vh auto auto 0px;
+  text-align: justify;
+  color: #838383;
+  font-weight: 600;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  height: 15%;
+  font-weight: 600;
+}
+
+
+#buy { 
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+  border: 0;
+  border-radius: 50px;
+  height: 50px;
+}
+
+#buy:active { 
+  text-decoration: underline;
+}
+
+#price { 
+  font-weight: 600;
+  color: #FFA542
+}
+
+
+footer { 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+
+  background-color: white;
+  width: 68vw;;
+  height: 149px;
+  border-radius: 30px 30px 0px 0px;
+
+  margin: auto;
+  box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+}
+
+.footerLogo { 
+  margin: auto;
+  margin-top: 10px;
+  margin-left: 40px;
+}
+
+.footerSocails { 
+  margin: auto;
+}
+
+.footerButtonsBlock { 
+  margin: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.footerButtons { 
+  margin: auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+  border: 0;
+  font-weight: 500;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  height: 25px;
+  margin: 3px;
+}
+
+
+.cart { 
+  min-height: calc(100vh - 215px);
+  width: 69vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: auto;
+}
+
+.cartContent { 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2vh auto 0 auto;
+}
+
+.lang { 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 28px;
+  font-weight: 700;
+}
+
+.current { 
+  color: #FFA542;
+}
+
+.link { 
+  text-decoration: none;
+}
+
+.order {
+  width: 25vw;
+  height: 13vh;
+  background-color: white;
+  border-radius: 30px;
+  margin-left: 32px;
+}
+
+
+.total { 
+  margin-top: 0px;
+  margin-left: 25px;
+  margin-right: 25px;
+  padding-top: 5px;
+  font-weight: 600;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+#orderBtn { 
+  height: 8vh;
+  width: 100%;
+  margin: 0;
+  background-color: #101010;
   color: white;
+  border: 0;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+  font-size: 20px
 }
 
-.App-link {
-  color: #61dafb;
+#orderBtn:active { 
+  box-shadow: inset 0 0 5px 5px rgba(100, 100, 100, 0.7);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+#cartText { 
+  font-size: 120%;
+  width: 99%;
+  height: 3%;
+  margin: 20px auto 0 10px;
+  text-align: justify;
+  color: #1C1C27;
+  font-weight: 600;
 }
+
+#orderBtnText { 
+  font-weight: 600;
+  font-size: 17px;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+
+.socialsBtn {
+  background-color: white;
+  border: 0;
+  height: 3vh;
+  margin-left: 5px;
+}
+
+.productCart {
+  display: flex;
+  flex-direction: row;
+
+  width: 40vw;
+  height: 28vh;
+  margin-right: 32px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+}
+
+.productsCart { 
+  display: flex;
+  flex-direction: column;
+}
+
+.emptyCart {
+  width: 40vw;
+  height: 28vh;
+  margin-right: 2vw;
+  margin-left: 10px;
+
+  background-color: #eaeaea;
+  border-radius: 30px;
+}
+
+
+.picAndCount { 
+  display: flex;
+  flex-direction: column;
+
+  width: 23%;
+  margin: auto 5% auto 5%;
+  margin-left: 5%;
+}
+
+
+.counts { 
+  display: flex;
+  flex-direction: row;
+}
+
+.counts button { 
+  margin: auto;
+  height: 30px;
+  width: 30px;
+
+  background-color: #FFCE7F;
+  border: white;
+  border-radius: 50px;
+}
+
+.cartinfo { 
+  margin: auto;
+  margin-left: 0px;
+}
+
+#p1 { 
+  font-size: 1vw;
+  font-weight: 500;
+}
+
+#p2 { 
+  font-size: 0.8vw;
+  font-weight: 600;
+
+  color: #aaa;
+}
+
+.delete { 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin: 2%;
+  
+}
+
+.delete button { 
+  height: 2vw;
+  width: 2vw;
+
+  background-color: white;
+  border: 0;
+}
+
+.delete p { 
+  font-weight: 600;
+}
+
+
+.countsBtn:active { 
+  background-color: #ddac5d;
+}
+
+#rate { 
+  vertical-align: baseline;
+}
+
+
+
+
+
+
